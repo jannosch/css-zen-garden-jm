@@ -1,0 +1,70 @@
+body {
+    background: #2c2c2c;
+    margin: 0;
+    background-size: cover;
+    font-family: "Quicksand", sans-serif;
+}
+
+body::before {
+    margin: 0;
+    border: 0;
+    z-index: -1;
+    position: fixed;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background: url("benn-mcguinness-5joapmLJjtY-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(0.3vh);
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 6vh;
+    color: rgba(46, 53, 89, 0.95);
+    margin: 0 0 3vw 1.5vw;
+}
+
+h2, h3 {
+    margin-top: 0.8em;
+    font-size: 1.25em;
+}
+
+a {
+    color: #ea661e;
+}
+
+.page-wrapper {
+    padding-top: 3vw;
+    display: block;
+    margin: auto;
+    width: 100vw;
+    max-width: 130vh;
+    background: rgba(255, 255, 255, 0.15);
+
+    box-shadow: 0 0 10vh 0 rgba(0, 0, 0, 0.75);
+}
+
+.main.supporting,
+.sidebar > .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: 0 1.5vh;
+}
+
+.main.supporting > *,
+.sidebar > .wrapper > * {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12);
+    margin: 0.75vh;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(15vh);
+    border-radius: 15px;
+    flex-grow: 1;
+    flex-basis: 35vh;
+}
+
+
